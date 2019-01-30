@@ -62,3 +62,4 @@ honda.gasSpend();
 honda.setCruiseControl();
 honda.createCare('https://s.aolcdn.com/dims-global/dims3/GLOB/legacy_thumbnail/788x525/quality/85/https://s.aolcdn.com/commerce/autodata/images/USC90HOC061A021001.jpg');
 honda.checkSpeed();
+console.log(honda);
