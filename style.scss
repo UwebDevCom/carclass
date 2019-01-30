@@ -1,0 +1,46 @@
+
+
+@for $i from 1 to 6
+{
+    @if $i%2 == 0 { 
+    .details li:nth-child(#{$i})
+    {
+        background-color:gainsboro;
+    }
+}@else {
+    .details li:nth-child(#{$i})
+    {
+    background-color:#f4f4f4;
+    }
+}
+}
+.car
+{
+ display: flex;
+ padding: 10px;
+ margin: 10px;
+ display: inline-block;
+ border: 1px solid darkcyan;
+}
+.details
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.details li
+{
+    padding: 10px;
+    margin: 10px;
+}
+img
+{
+    height: 300px;
+    width: auto;
+}
+h1{
+    text-align: center;
+}

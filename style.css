@@ -1,0 +1,42 @@
+.details li:nth-child(1) {
+  background-color: #f4f4f4; }
+
+.details li:nth-child(2) {
+  background-color: gainsboro; }
+
+.details li:nth-child(3) {
+  background-color: #f4f4f4; }
+
+.details li:nth-child(4) {
+  background-color: gainsboro; }
+
+.details li:nth-child(5) {
+  background-color: #f4f4f4; }
+
+.car {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  border: 1px solid darkcyan; }
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0px;
+  padding: 0px; }
+
+.details li {
+  padding: 10px;
+  margin: 10px; }
+
+img {
+  height: 300px;
+  width: auto; }
+
+h1 {
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
