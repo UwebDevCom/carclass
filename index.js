@@ -57,9 +57,17 @@ const markup = `<div class="car">
 
 
 const honda = new Car('honda','insight','AS345',2017,5000,16);
+const hyundai = new Car('Hyundai', 'Elantra', 'GLS', 2015, 5000, 16);
 
 honda.gasSpend();
 honda.setCruiseControl();
 honda.createCare('https://s.aolcdn.com/dims-global/dims3/GLOB/legacy_thumbnail/788x525/quality/85/https://s.aolcdn.com/commerce/autodata/images/USC90HOC061A021001.jpg');
 honda.checkSpeed();
 console.log(honda);
+
+hyundai.gasSpend();
+hyundai.setCruiseControl();
+hyundai.createCare('https://s.aolcdn.com/dims-global/dims3/GLOB/legacy_thumbnail/788x525/quality/85/https://s.aolcdn.com/commerce/autodata/images/USC90HOC061A021001.jpg');
+hyundai.checkSpeed();
+console.log(hyundai);
+
