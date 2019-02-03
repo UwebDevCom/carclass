@@ -18,9 +18,8 @@ gasSpend()
 }
 checkSpeed()
 {
-    let monEl =document.querySelector('.details li.speed button');
-    monEl.addEventListener('click',(e)=>{
-        monEl = document.querySelector('.details li.speed button');
+    let monEl =document.querySelectorAll('.details li.speed button');
+    forEach((el)=>{el.addEventListener('click',(e)=>{
         let countTime=0;
         setInterval(()=>{
             if (this.secTo100 > countTime) {
@@ -31,7 +30,7 @@ checkSpeed()
             }
         },100);
     })
-    
+    })
 }
     setCruiseControl(){
         return !this.isSet ? this.isSet = true : this.isSet = false;
