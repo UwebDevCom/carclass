@@ -24,7 +24,7 @@ checkSpeed()
         setInterval(()=>{
             if (this.secTo100 > countTime) {
                 countTime+=100;
-                document.querySelector('.details li.speed').textContent = `${countTime}`;
+                el.textContent = `${countTime}`;
             }else {
                 clearInterval();
             }
