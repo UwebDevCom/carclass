@@ -18,14 +18,14 @@ gasSpend()
 }
 checkSpeed()
 {
-    const monEl =document.querySelector('.details li.speed button');
+    let monEl =document.querySelector('.details li.speed button');
     monEl.addEventListener('click',(e)=>{
+        monEl = document.querySelector('.details li.speed button');
         let countTime=0;
         setInterval(()=>{
             if (this.secTo100 > countTime) {
                 countTime+=100;
                 document.querySelector('.details li.speed').textContent = `${countTime}`;
-                console.log('e.target');
             }else {
                 clearInterval();
             }
