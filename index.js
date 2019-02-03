@@ -19,12 +19,12 @@ gasSpend()
 checkSpeed()
 {
     let monEl =document.querySelectorAll('.details li.speed button');
-    monEl.forEach((el)=>{el.addEventListener('click',(e)=>{
+    monEl.forEach((el,i)=>{el.addEventListener('click',(e)=>{
         let countTime=0;
         setInterval(()=>{
             if (this.secTo100 > countTime) {
                 countTime+=100;
-                el.textContent = `${countTime}`;
+                document.querySelectorAll('.details li.speed')[i].textContent = `${countTime}`;
             }else {
                 clearInterval();
             }
