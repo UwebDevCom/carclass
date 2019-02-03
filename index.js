@@ -25,6 +25,7 @@ checkSpeed()
             if (this.secTo100 > countTime) {
                 countTime+=100;
                 document.querySelector('.details li.speed').textContent = `${countTime}`;
+                console.log('e.target');
             }else {
                 clearInterval();
             }
